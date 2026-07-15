@@ -16,17 +16,16 @@
 coverage.*
 *.coverprofile
 profile.cov
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
-.env
+.cache
 
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
+.helix/
+.zed/
+
+# Build
+build/
+
+# ESP-IDF
+sdkconfig.old
