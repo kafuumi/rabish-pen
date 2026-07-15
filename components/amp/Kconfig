@@ -1,0 +1,20 @@
+menu "AMP Configuration"
+
+    config AMP_OGG_DISABLE_CRC
+        bool "Disable Ogg CRC checksum"
+        default n
+        help
+            Disable CRC computation in the Ogg framing layer.
+            Reduces code size at the cost of losing corruption detection
+            in Ogg streams.
+
+    config AMP_OPUS_ENABLE_FLOAT
+        bool "Enable Opus floating-point API"
+        default n
+        help
+            Enable floating-point arithmetic and API for libopus.
+            When disabled, fixed-point arithmetic is used instead,
+            which saves CPU on targets without hardware FPU (ESP32-S2, -C3).
+            Enable on ESP32 / ESP32-S3 which have hardware FPU support.
+
+endmenu

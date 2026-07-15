@@ -1,9 +1,6 @@
-[submodule "components/amp/thirdparty/libopusenc"]
-	path = components/amp/thirdparty/libopusenc
-	url = https://github.com/xiph/libopusenc.git
 [submodule "components/amp/thirdparty/opus"]
 	path = components/amp/thirdparty/opus
 	url = https://github.com/xiph/opus.git
-[submodule "components/amp/thirdparty/libogg"]
-	path = components/amp/thirdparty/libogg
-	url = https://github.com/gcp/libogg.git
+[submodule "components/amp/thirdparty/ogg"]
+	path = components/amp/thirdparty/ogg
+	url = https://github.com/xiph/ogg.git
