@@ -4,3 +4,6 @@
 [submodule "components/amp/thirdparty/ogg"]
 	path = components/amp/thirdparty/ogg
 	url = https://github.com/xiph/ogg.git
+[submodule "components/cutils/sds"]
+	path = components/cutils/sds
+	url = https://github.com/antirez/sds.git

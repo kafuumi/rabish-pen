@@ -1,9 +1,12 @@
 set(src_files "opus_decoder.c")
 
+set(priv_requires cutils)
+
 idf_component_register(SRCS ${src_files}
-        INCLUDE_DIRS       "include/"
+        INCLUDE_DIRS      "include/"
         PRIV_INCLUDE_DIRS "."
-        REQUIRES)
+        REQUIRES
+        PRIV_REQUIRES ${priv_requires})
 
 add_subdirectory(thirdparty)
 
