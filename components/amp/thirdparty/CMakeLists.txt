@@ -86,8 +86,6 @@ set(USIZE32 uint32_t)
 set(SIZE64 int64_t)
 set(USIZE64 uint64_t)
 
-include(${OGG_ROOT}/cmake/CheckSizes.cmake)
-
 configure_file(${OGG_ROOT}/include/ogg/config_types.h.in ${OGG_ROOT}/include/ogg/config_types.h @ONLY)
 
 set(ogg_src_files ${OGG_ROOT}/src/bitwise.c
